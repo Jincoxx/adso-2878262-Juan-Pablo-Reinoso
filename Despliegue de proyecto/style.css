@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 393;
+    height: auto;
+  }
+  
+  header {
+    background-color: #005f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+  }
+  
+  header .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    border: 0px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+    height: 50%;
+    overflow: hidden;
+  }
+  
+  .profile {
+    border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+  }
+  
+  header img {
+    border-radius: 15%;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  header h1 {
+    margin: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+    width: 100%;
+    height: 70%;
+  }
+  
+  .projects {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    background-color: #d1e7dd;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .project-info {
+    text-align: center;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1rem;
+    height: 50%;
+  }
+  
+  /* Media Queries for Mobile View */
+  @media screen and (min-width: 393px) and (max-width: 852px) {
+    header {
+      width: 100vw;
+    }
+    main {
+      width: 100vw;
+    }
+  
+    .projects {
+      padding: 0 10px;
+    }
+  
+    .project {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .project img {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .project-info {
+      text-align: left;
+    }
+  
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-star;
+      text-align: center;
+      padding: 5rem;
+    }
+    
+  }
